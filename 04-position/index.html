@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Position의 4종류</h1>
+    <h2>1. static (기본)</h2>
+    <p> 설정한 곳에 위치하며 스크롤시 따라 올라감</p>
+    <div id="boxOne">
+        <div class="box-child">1. static box</div>
+    </div>
+
+
+    <h2>2. fixed</h2>
+    <p> 2. 스크롤해도 해당 위치에 붙어있다.</p>
+    <div id="boxTwo">
+        <div class="box-child">fixed-box</div>
+    </div>
+
+
+    <h2>3. absolute </h2>
+    <p></p>
+    <div class="absolute-box"> absolute-box
+        <div class="absolute-box-child">3. absolute-box</div>
+    </div>
+
+    <h2>4. relative</h2>
+    <p>father객체의 css에 position: relative;입력하면, absolute 사용시 father객체를 기준으로 삼는다. 적용하지 않는 경우는 body를 기준</p>
+    <div class="relative-father-box"> 4-1. relative-father-box
+        <div class="relative-child-box"> 4-2. relative-child-box / absolute</div>
+    </div>
+
+
+</body>
+
+</html>

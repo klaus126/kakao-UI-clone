@@ -1,0 +1,64 @@
+body,
+html {
+    /* 브라우져가 가지고 있는 디폴트 값 상쇄 */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 400%;
+    background-color: green;
+}
+
+#boxOne {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    position: static;
+    /* 해당 element를 거기 놓으면 해당 자리에 있을 것이다.*/
+}
+
+#boxTwo {
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    position: fixed;
+    right: 30px;
+    top: 130px;
+    /* 화면에 고정, 스크롤에도 무반응.*/
+}
+
+
+.absolute-box {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+
+.absolute-box-child {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    right: 10px;
+    top: 600px;
+}
+
+
+.relative-father-box {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    position: relative;
+}
+
+.relative-child-box {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
